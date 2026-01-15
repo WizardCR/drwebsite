@@ -10,23 +10,23 @@ export const works: WorkItem[] = [
 
   {
     id: "work-cacao-cartel",
-    title: "Cacao Cartel",
-    role: "Branding / Development / Ecommerce",
-     href: "/work/",
+    title: "Campaña Digital e Impresa Cacao Cartel",
+    role: "Campaign / Design / Ads",
+     href: "#",
 
     imageUrl: "/images/Taro.Latte.Social.jpg"
   },{
     id: "work-rainforest-water",
     title: "RainForest Water",
     role: "Identidad de Marca / Packaging / E-commerce",
-    href: "/work/",
+    href: "#",
 
     imageUrl: "/images/gallery-1.jpg"
   },{
     id: "project-3",
     title: "Identidad de Marca para AGE Seguros",
     role: "Branding / Identity",
-      href: "/work/",
+      href: "#",
 
     imageUrl: "/images/gallery-age-seguros.jpg"
   },
@@ -34,7 +34,7 @@ export const works: WorkItem[] = [
     id: "project-4",
     title: "Identidad de Marca para AFE Global Logistics",
     role: "UI/UX / Development",
-    href: "/work/",
+    href: "#",
 
     imageUrl: "/images/gallery-2.jpg"
   },
@@ -42,21 +42,21 @@ export const works: WorkItem[] = [
     id: "work-metalub",
     title: "Metalub",
     role: "Branding / Development / Ecommerce",
-    href: "/work/",
+    href: "#",
     imageUrl: "/images/work-metalub.jpg"
   },
   {
     id: "work-cacao-cartel2",
     title: "Cacao Cartel",
     role: "Branding / Development / Ecommerce",
-    href: "/work/",
+    href: "#",
     imageUrl: "/images/work-cacao-cartel.jpg"
   },
   {
     id: "project-agecapital",
     title: "Identidad de Marca para AGE Capital",
     role: "Brand / Identity",
-    href: "/work/",
+    href: "#",
     imageUrl: "/images/work-age-capital.jpg"
   },
 
