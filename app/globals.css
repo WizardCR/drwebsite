@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #000;
   --foreground: #171717;
 }
 
@@ -23,4 +23,109 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Prevent flash before SplitText animation */
+[data-split-text],
+h1 {
+  visibility: hidden;
+}
+
+.menuList li a {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: transparent;
+  /* Makes the inside of the text transparent */
+  color: transparent;
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: lime;
+}
+
+.split-line {
+  display: block;
+  overflow: hidden;
+}
+
+.split-line>span {
+  display: block;
+  will-change: transform, opacity;
+}
+
+
+@media (pointer: coarse) {
+  * {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* Hide native cursor */
+* {
+  cursor: none;
+}
+
+/* Wrapper handles position ONLY */
+.cursor-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+
+}
+
+/* Base dot (stroke only) */
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  border: 1.5px solid white;
+  background: transparent;
+  box-sizing: border-box;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+  mix-blend-mode: difference;
+}
+
+/* Hover state */
+.cursor-dot.is-hover {
+  background: white;
+  transform: scale(6.4);
+  mix-blend-mode: difference;
+}
+
+/* Disable on touch devices */
+@media (pointer: coarse) {
+  * {
+    cursor: auto;
+  }
+
+  .cursor-wrapper {
+    display: none;
+  }
+}
+
+.logo-mask {
+  mask-image: linear-gradient(to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent);
+}
+
+header {
+  mix-blend-mode: difference;
+}
+
+header svg {
+  mix-blend-mode: difference
 }
