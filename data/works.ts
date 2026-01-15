@@ -43,7 +43,7 @@ export const works: WorkItem[] = [
     title: "Metalub",
     role: "Branding / Development / Ecommerce",
     href: "/work/",
-    imageUrl: "/images/work-metalub2.jpg"
+    imageUrl: "/images/work-metalub.jpg"
   },
   {
     id: "work-cacao-cartel2",

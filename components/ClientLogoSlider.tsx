@@ -14,9 +14,9 @@ export default function ClientLogoSlider() {
     <section className="mt-10 overflow-hidden">
 
       <Container>
-         <div className="col-span-12 pb-10">
+         {/* <div className="col-span-12 pb-10">
           <AnimatedHr />
-        </div>
+        </div> */}
         <div className="relative logo-mask">
           <motion.div
             className="flex items-center gap-22"

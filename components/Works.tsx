@@ -5,7 +5,7 @@ import SplitText from "./SplitText";
 
 export default function WorkGrid() {
   return (
-    <section className="mt-[5vh]">
+    <section className="my-[5vh]">
       <Container>
         {/* <SplitText text="Trabajo que construye marcas, productos digitales y campañas con propósito, claridad e impacto." as="h3" variant="paragraph" className="max-w-3xl text-[clamp(1.2rem,1.9vw,2.2rem)] leading-[1.4] font-light pb-12" /> */}
         <div
